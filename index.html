@@ -1,66 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Toko Fitri 💙</title>
+    <title>Toko Fitri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <div><b>💙 Toko Fitri</b></div>
-    <div>
-        <a href="#">Beranda</a>
-        <a href="#">Produk</a>
-        <a href="#">Kategori</a>
-        <a href="#">Promo</a>
-        <a href="login.html">Login</a>
-    </div>
+    <b>Toko Fitri 💙</b>
+    <input type="text" placeholder="Cari produk...">
+    <a href="login.html" style="color:white;">Login</a>
 </div>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Toko Fitri 💙</h1>
-    <p>Belanja mudah, hati senang!</p>
-</div>
-
-<!-- FITUR -->
-<div class="fitur">
-    <div>🚚 Gratis Ongkir</div>
-    <div>✔️ Produk Original</div>
-    <div>🎧 24 Jam</div>
-    <div>🔥 Promo Menarik</div>
+<!-- MENU -->
+<div class="menu">
+    <div>Elektronik</div>
+    <div>Fashion</div>
+    <div>Kecantikan</div>
+    <div>Aksesoris</div>
 </div>
 
 <!-- PRODUK -->
 <div class="container">
 
-<div class="produk">
-    <img src="https://via.placeholder.com/200">
-    <h3>Skincare Blue</h3>
+<div class="card">
+    <img src="gambar/produk1.jpg">
+    <h4>Skincare</h4>
     <p>Rp65.000</p>
-    <button onclick="tambah('Skincare')">Tambah</button>
+    <button onclick="tambah('Skincare',65000)">+ Keranjang</button>
 </div>
 
-<div class="produk">
-    <img src="https://via.placeholder.com/200">
-    <h3>Cushion Blue</h3>
-    <p>Rp85.000</p>
-    <button onclick="tambah('Cushion')">Tambah</button>
-</div>
-
-<div class="produk">
-    <img src="https://via.placeholder.com/200">
-    <h3>Parfum Blue</h3>
+<div class="card">
+    <img src="gambar/produk2.jpg">
+    <h4>Parfum</h4>
     <p>Rp75.000</p>
-    <button onclick="tambah('Parfum')">Tambah</button>
-</div>
-
-<div class="produk">
-    <img src="https://via.placeholder.com/200">
-    <h3>Tas Cute</h3>
-    <p>Rp55.000</p>
-    <button onclick="tambah('Tas')">Tambah</button>
+    <button onclick="tambah('Parfum',75000)">+ Keranjang</button>
 </div>
 
 </div>
@@ -69,16 +44,9 @@
 <div class="cart">
     <h3>🛒 Keranjang</h3>
     <ul id="list"></ul>
+    <p>Total: Rp <span id="total">0</span></p>
 </div>
 
-<script>
-function tambah(nama) {
-    let list = document.getElementById("list");
-    let item = document.createElement("li");
-    item.innerText = nama;
-    list.appendChild(item);
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
