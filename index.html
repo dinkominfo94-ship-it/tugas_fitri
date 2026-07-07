@@ -1,75 +1,52 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #f5f5f5;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toko Fitri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* NAVBAR */
-.navbar {
-    background: #5c8df6;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-}
+<!-- NAVBAR -->
+<div class="navbar">
+    <b>Toko Fitri 💙</b>
+    <input type="text" placeholder="Cari produk...">
+    <a href="login.html" style="color:white;">Login</a>
+</div>
 
-.navbar input {
-    width: 40%;
-    padding: 8px;
-    border-radius: 20px;
-    border: none;
-}
+<!-- MENU -->
+<div class="menu">
+    <div>Elektronik</div>
+    <div>Fashion</div>
+    <div>Kecantikan</div>
+    <div>Aksesoris</div>
+</div>
 
-/* MENU */
-.menu {
-    display: flex;
-    justify-content: space-around;
-    background: white;
-    padding: 10px;
-}
+<!-- PRODUK -->
+<div class="container">
 
-/* PRODUK GRID */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-}
+<div class="card">
+    <img src="gambar/produk1.jpg">
+    <h4>Skincare</h4>
+    <p>Rp65.000</p>
+    <button onclick="tambah('Skincare',65000)">+ Keranjang</button>
+</div>
 
-.card {
-    width: 180px;
-    background: white;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    transition: 0.3s;
-}
+<div class="card">
+    <img src="gambar/produk2.jpg">
+    <h4>Parfum</h4>
+    <p>Rp75.000</p>
+    <button onclick="tambah('Parfum',75000)">+ Keranjang</button>
+</div>
 
-.card:hover {
-    transform: scale(1.05);
-}
+</div>
 
-.card img {
-    width: 100%;
-}
+<!-- CART -->
+<div class="cart">
+    <h3>🛒 Keranjang</h3>
+    <ul id="list"></ul>
+    <p>Total: Rp <span id="total">0</span></p>
+</div>
 
-button {
-    width: 100%;
-    background: #5c8df6;
-    color: white;
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-}
-
-/* CART */
-.cart {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background: white;
-    padding: 10px;
-    overflow: auto;
-}
+<script src="script.js"></script>
+</body>
+</html>
