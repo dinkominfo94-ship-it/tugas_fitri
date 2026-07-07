@@ -1,21 +1,118 @@
 body {
-    font-family: Arial;
-    background: #ffe4f0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f6ff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #e0edff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4a6fa5;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #a7c7ff, #cfe2ff);
+    margin: 20px;
+    padding: 40px;
+    border-radius: 25px;
     text-align: center;
+    color: white;
 }
 
-.box {
-    background: white;
-    padding: 20px;
-    margin: 100px auto;
-    width: 300px;
-    border-radius: 15px;
+.hero h1 {
+    margin: 0;
 }
 
-.produk {
+/* FITUR */
+.fitur {
+    display: flex;
+    justify-content: space-around;
     background: white;
     margin: 20px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+/* PRODUK */
+.container {
+    padding: 20px;
+}
+
+.produk {
+    width: 220px;
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
     display: inline-block;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.produk:hover {
+    transform: translateY(-5px);
+}
+
+.produk img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button {
+    width: 100%;
+    background: #5c8df6;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3b6fe0;
+}
+
+/* CART */
+.cart {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* LOGIN PAGE */
+.login-bg {
+    height: 100vh;
+    background: linear-gradient(to bottom, #a7c7ff, #dbeafe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
 }
