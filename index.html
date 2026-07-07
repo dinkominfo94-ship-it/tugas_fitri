@@ -1,33 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Toko Fitri 💖</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
 
-<h1>🛍️ Toko Fitri 💕</h1>
+/* NAVBAR */
+.navbar {
+    background: #5c8df6;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
 
-<div class="produk">
-    <h3>🌸 Skincare</h3>
-    <p>Rp50.000</p>
-    <button>Beli</button>
-</div>
+.navbar input {
+    width: 40%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
 
-<div class="produk">
-    <h3>💄 Makeup</h3>
-    <p>Rp75.000</p>
-    <button>Beli</button>
-</div>
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px;
+}
 
-<div class="produk">
-    <h3>🎀 Parfum</h3>
-    <p>Rp60.000</p>
-    <button>Beli</button>
-</div>
+/* PRODUK GRID */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
 
-<br><br>
-<a href="login.html">🔐 Login Admin</a>
+.card {
+    width: 180px;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
 
-</body>
-</html>
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    background: #5c8df6;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* CART */
+.cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: white;
+    padding: 10px;
+    overflow: auto;
+}
