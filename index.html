@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tugas Fitri</title>
-    <style>
-        body {
-            background-color: #ffe4f0;
-            font-family: Arial;
-            text-align: center;
-        }
-        h1 {
-            color: #ff4da6;
-        }
-        p {
-            color: #333;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            margin: 50px auto;
-            width: 300px;
-            border-radius: 15px;
-            box-shadow: 0px 0px 10px pink;
-        }
-    </style>
+    <title>Toko Fitri 💙</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="box">
-    <h1>Halo 👋</h1>
-    <p>Ini tugas GitHub aku</p>
-    <p><b>Nama:</b> Fitri Ameliya</p>
-    <p><b>Kelas:</b> (XI RPL)</p>
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><b>💙 Toko Fitri</b></div>
+    <div>
+        <a href="#">Beranda</a>
+        <a href="#">Produk</a>
+        <a href="#">Kategori</a>
+        <a href="#">Promo</a>
+        <a href="login.html">Login</a>
+    </div>
 </div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Toko Fitri 💙</h1>
+    <p>Belanja mudah, hati senang!</p>
+</div>
+
+<!-- FITUR -->
+<div class="fitur">
+    <div>🚚 Gratis Ongkir</div>
+    <div>✔️ Produk Original</div>
+    <div>🎧 24 Jam</div>
+    <div>🔥 Promo Menarik</div>
+</div>
+
+<!-- PRODUK -->
+<div class="container">
+
+<div class="produk">
+    <img src="https://via.placeholder.com/200">
+    <h3>Skincare Blue</h3>
+    <p>Rp65.000</p>
+    <button onclick="tambah('Skincare')">Tambah</button>
+</div>
+
+<div class="produk">
+    <img src="https://via.placeholder.com/200">
+    <h3>Cushion Blue</h3>
+    <p>Rp85.000</p>
+    <button onclick="tambah('Cushion')">Tambah</button>
+</div>
+
+<div class="produk">
+    <img src="https://via.placeholder.com/200">
+    <h3>Parfum Blue</h3>
+    <p>Rp75.000</p>
+    <button onclick="tambah('Parfum')">Tambah</button>
+</div>
+
+<div class="produk">
+    <img src="https://via.placeholder.com/200">
+    <h3>Tas Cute</h3>
+    <p>Rp55.000</p>
+    <button onclick="tambah('Tas')">Tambah</button>
+</div>
+
+</div>
+
+<!-- CART -->
+<div class="cart">
+    <h3>🛒 Keranjang</h3>
+    <ul id="list"></ul>
+</div>
+
+<script>
+function tambah(nama) {
+    let list = document.getElementById("list");
+    let item = document.createElement("li");
+    item.innerText = nama;
+    list.appendChild(item);
+}
+</script>
 
 </body>
 </html>
