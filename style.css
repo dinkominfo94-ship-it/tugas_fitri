@@ -1,50 +1,52 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ffd6e7, #ffeaf5);
-    text-align: center;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toko Fitri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Judul */
-h1 {
-    color: #ff4da6;
-}
+<!-- NAVBAR -->
+<div class="navbar">
+    <b>Toko Fitri 💙</b>
+    <input type="text" placeholder="Cari produk...">
+    <a href="login.html" style="color:white;">Login</a>
+</div>
 
-/* Card produk */
-.produk {
-    background: white;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 20px;
-    display: inline-block;
-    width: 200px;
-    box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.3);
-    transition: 0.3s;
-}
+<!-- MENU -->
+<div class="menu">
+    <div>Elektronik</div>
+    <div>Fashion</div>
+    <div>Kecantikan</div>
+    <div>Aksesoris</div>
+</div>
 
-.produk:hover {
-    transform: scale(1.05);
-}
+<!-- PRODUK -->
+<div class="container">
 
-/* Tombol */
-button {
-    background: #ff66b2;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+<div class="card">
+    <img src="gambar/produk1.jpg">
+    <h4>Skincare</h4>
+    <p>Rp65.000</p>
+    <button onclick="tambah('Skincare',65000)">+ Keranjang</button>
+</div>
 
-button:hover {
-    background: #ff3385;
-}
+<div class="card">
+    <img src="gambar/produk2.jpg">
+    <h4>Parfum</h4>
+    <p>Rp75.000</p>
+    <button onclick="tambah('Parfum',75000)">+ Keranjang</button>
+</div>
 
-/* Box login */
-.box {
-    background: white;
-    padding: 25px;
-    margin: 100px auto;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 20px rgba(255, 105, 180, 0.3);
-}
+</div>
+
+<!-- CART -->
+<div class="cart">
+    <h3>🛒 Keranjang</h3>
+    <ul id="list"></ul>
+    <p>Total: Rp <span id="total">0</span></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
